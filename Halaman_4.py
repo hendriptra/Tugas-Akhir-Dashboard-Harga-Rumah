@@ -746,9 +746,9 @@ def render_prediction_page(df=None):
                         "borderwidth": 1,
                         "bordercolor": "#d9e2ec",
                         "steps": [
-                            {"range": [0, 100], "color": "#4ADE80"},
-                            {"range": [100, 150], "color": "#FACC15"},
-                            {"range": [150, 250], "color": "#F87171"},
+                            {"range": [0, 100], "color": "#A7E8C0"},
+                            {"range": [100, 150], "color": "#FFE08A"},
+                            {"range": [150, 250], "color": "#F5B0B0"},
                         ],
                     },
                 )
