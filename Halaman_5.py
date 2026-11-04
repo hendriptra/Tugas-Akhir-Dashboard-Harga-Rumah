@@ -194,9 +194,9 @@ def render_about_page(df=None):
             st.markdown("**Fokus Penelitian**")
             st.markdown(
                 """
-                - Regresi terregularisasi dengan norma \\(L_1\\) dan \\(L_2\\)
+                - Regresi terregularisasi dengan norma $L_1$ dan $L_2$
                 - Penanganan multikolinearitas
-                - Pemodelan pada kondisi dimensi tinggi \\((p > n)\\)
+                - Pemodelan pada kondisi dimensi tinggi $p > n$
                 - Penerapan metode machine learning untuk prediksi harga rumah
                 """
             )
