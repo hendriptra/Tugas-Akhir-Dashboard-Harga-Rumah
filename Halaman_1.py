@@ -236,7 +236,7 @@ def render_overview_page(df=None):
         "Ringkasan dataset, metode pemodelan, dan metrik evaluasi yang digunakan."
     )
 
-    c1, c2, c3 = st.columns([1, 1.25, 1])
+    c1, c2, c3 = st.columns([1, 1.15, 1])
 
     with c1:
         st.markdown(
