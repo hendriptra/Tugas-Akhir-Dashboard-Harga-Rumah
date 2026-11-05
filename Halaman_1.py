@@ -260,7 +260,7 @@ def render_overview_page(df=None):
                 <p>
                     Model Dasar: Regresi Linear (OLS)<br>
                     Model Utama: Regresi Ridge dan LASSO<br>
-                    Model Pembanding: Regresi LASSO
+                    Model Pembanding: Regresi Elastic Net
                 </p>
             </div>
             """,
