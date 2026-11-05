@@ -258,9 +258,9 @@ def render_overview_page(df=None):
             <div class="overview-card">
                 <h4>📊 Model</h4>
                 <p>
-                    Regresi Linear (OLS)<br>
-                    Regresi Ridge<br>
-                    Regresi LASSO
+                    Model Dasar: Regresi Linear (OLS)<br>
+                    Model Utama: Regresi Ridge dan LASSO<br>
+                    Model Pembanding: Regresi LASSO
                 </p>
             </div>
             """,
