@@ -140,20 +140,10 @@ st.sidebar.markdown(
     """
     <div style="padding: 0.4rem 0 1rem;">
         <div style="font-size: 2rem;">🏡</div>
-
-        <div style="
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: #FFFFFF;
-        ">
+        <div style="font-size: 1.15rem; font-weight: 700; color: #ffffff;">
             House Price Analytics
         </div>
-
-        <div style="
-            font-size: 0.8rem;
-            color: #DCE6F2;
-            margin-top: 0.25rem;
-        ">
+        <div style="font-size: 0.8rem; color: #DCE6F2; margin-top: 0.25rem;">
             Dashboard Tugas Akhir · Matematika ITB
         </div>
     </div>
