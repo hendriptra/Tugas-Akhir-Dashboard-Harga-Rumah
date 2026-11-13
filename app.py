@@ -24,9 +24,16 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-    /* Latar utama dan ruang konten */
+    /* =========================================
+       GLOBAL BACKGROUND
+    ========================================= */
+
     .stApp {
-        background: linear-gradient(135deg, #f7faf9 0%, #eef5f3 100%);
+        background: linear-gradient(
+            135deg,
+            #F8FAFD 0%,
+            #F1F5FA 100%
+        );
     }
 
     .block-container {
@@ -35,21 +42,29 @@ st.markdown(
         max-width: 1450px;
     }
 
-    /* Sidebar */
+
+    /* =========================================
+       SIDEBAR - MIDNIGHT NAVY
+    ========================================= */
+
     [data-testid="stSidebar"] {
-        background: #123b35;
-        border-right: 1px solid #d8e6e1;
+        background: #142B4A;
+        border-right: 1px solid #243F63;
     }
 
     [data-testid="stSidebar"] * {
-        color: #f4f8f6;
+        color: #F4F7FB;
     }
 
     [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
-        color: #c9ded7;
+        color: #DCE6F2;
     }
 
-    /* Radio navigasi */
+
+    /* =========================================
+       SIDEBAR NAVIGATION
+    ========================================= */
+
     [data-testid="stSidebar"] [role="radiogroup"] {
         gap: 0.35rem;
     }
@@ -61,32 +76,45 @@ st.markdown(
     }
 
     [data-testid="stSidebar"] [role="radiogroup"] label:hover {
-        background: #24564e;
+        background: #243F63;
     }
 
-    /* Tombol */
+
+    /* =========================================
+       BUTTONS
+    ========================================= */
+
     .stButton > button {
-        border: 1px solid #c5d8d1;
+        border: 1px solid #D1DCE9;
         border-radius: 0.7rem;
         font-weight: 600;
         transition: all 0.2s ease;
     }
 
     .stButton > button:hover {
-        border-color: #287c6b;
-        color: #176653;
+        border-color: #476A91;
+        color: #203F66;
     }
 
-    /* Garis pemisah sidebar */
+
+    /* =========================================
+       SIDEBAR DIVIDERS
+    ========================================= */
+
     [data-testid="stSidebar"] hr {
-        border-color: #37675e;
+        border-color: #385271;
     }
 
-    /* Judul */
+
+    /* =========================================
+       GLOBAL HEADINGS
+    ========================================= */
+
     h1, h2, h3 {
-        color: #173f38;
+        color: #183653;
         letter-spacing: -0.02em;
     }
+
     </style>
     """,
     unsafe_allow_html=True,
@@ -112,16 +140,27 @@ st.sidebar.markdown(
     """
     <div style="padding: 0.4rem 0 1rem;">
         <div style="font-size: 2rem;">🏡</div>
-        <div style="font-size: 1.15rem; font-weight: 700; color: #ffffff;">
+
+        <div style="
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #FFFFFF;
+        ">
             House Price Analytics
         </div>
-        <div style="font-size: 0.8rem; color: #c9ded7; margin-top: 0.25rem;">
+
+        <div style="
+            font-size: 0.8rem;
+            color: #DCE6F2;
+            margin-top: 0.25rem;
+        ">
             Dashboard Tugas Akhir · Matematika ITB
         </div>
     </div>
     """,
     unsafe_allow_html=True,
 )
+
 
 selected_page = st.sidebar.radio(
     "Pilih Halaman:",
@@ -135,16 +174,25 @@ selected_page = st.sidebar.radio(
     label_visibility="collapsed",
 )
 
+
 st.sidebar.divider()
 
+
 # Tombol clear cache
-if st.sidebar.button("🔄 Reset / Clear Cache", use_container_width=True):
+if st.sidebar.button(
+    "🔄 Reset / Clear Cache",
+    use_container_width=True
+):
     st.cache_data.clear()
     st.cache_resource.clear()
     st.toast("Cache berhasil dibersihkan!", icon="🧹")
 
+
 st.sidebar.divider()
-st.sidebar.caption("Tugas Akhir Seminar Matematika ITB")
+
+st.sidebar.caption(
+    "Tugas Akhir Seminar Matematika ITB"
+)
 
 
 # 5. Routing / pemanggilan halaman
